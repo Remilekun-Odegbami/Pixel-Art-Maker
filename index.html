@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/0383fc1297.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Art Maker</title>
+</head>
+<body>
+    <div class="container bg-light mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="header">
+                    <h1 class="text-info">Pixel Art Maker</h1>
+                </div>
+
+                <form class="size-picker mt-5">
+                    <div class="sub-header">
+                        <h2>Choose Grid Size</h2>
+                    </div>
+
+                    <div class="size">
+                        Grid Height:
+                        <input type="number" id="inputHeight" name="height" min="5" value="10">
+                        Grid Width:
+                        <input type="number" id="inputWidth" name="width" min="5" value="8">
+                        <input type="submit" class="btn btn-info">
+                    </div>
+
+                    <div class="color-picker mt-5">
+                        <h2 class="color">Pick a color</h2>
+                        <input type="color" id="colorPicker">
+                    </div>
+                </form>                
+            </div>
+
+            <div class="col-md-12 text-center my-5">
+                <h2>Design Canvas</h2>
+                <table id="pixelCanvas"></table>
+            </div>
+        </div>
+    </div>
+    
+<script src="app.js"></script>
+</body>
+</html>

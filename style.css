@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: Monoton;
+    background: rgb(46, 77, 72);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0.2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(40, 98, 98);
+    font-weight: bold;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+/* remove webkit from input number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
