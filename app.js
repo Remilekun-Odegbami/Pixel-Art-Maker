@@ -4,7 +4,7 @@ const inputWidth = document.querySelector("#inputWidth");
 const color = document.querySelector("#colorPicker");
 const pixelCanvas = document.querySelector("#pixelCanvas");
 
-// clear grid function
+// clear grid function when the submit button is clicked
 function clearGrid() {
 	const gridRows = document.querySelectorAll("tr");
 	gridRows.forEach((row) => {
@@ -12,7 +12,11 @@ function clearGrid() {
 	});
 }
 
-// function to create grid
+/* 
+ * @desc create a grid of squares 
+  * @param int $width - number of squares representing the width of the grid
+  * @param int $height - number of squares representing the height of the grid
+*/
 function makeGrid(e) {
 	e.preventDefault();
 
@@ -22,7 +26,7 @@ function makeGrid(e) {
 	const height = inputHeight.value;
 	const width = inputWidth.value;
 
-	for (let i = 0; i <= height; i++) {
+	for (let i = 1; i <= height; i++) {
 		// create table row
 		const row = document.createElement("tr");
 		for (let j = 1; j <= width; j++) {
